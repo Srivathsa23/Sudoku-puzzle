@@ -1,4 +1,4 @@
-# Sudoku-puzzle
+# Sudoku-puzzle by Srivathsa 108119039
 
 Developed using HTML, CSS and Javascript. 
 The HTML file contains all the components in the webpage like the title, a rules popup button, radio buttons to select difficulty, time and theme, a start game button to start the game and the sudoku board will be displayed once the start game button has been clicked.
