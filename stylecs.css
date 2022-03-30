@@ -1,0 +1,214 @@
+.hidden {
+    display: none;
+}
+
+header {
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 1px solid red;
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: monospace;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 50pt;
+    margin-top: 0;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 25pt;
+    text-decoration: underline;
+    padding-left: 50px;
+  }
+
+  .popup .popuptext {
+      font-size: 20pt;
+    visibility: hidden;
+    width: 1600px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+#full {
+    display: flex;
+}
+/* #down {
+    display: flex;
+    
+} */
+#rules {
+    
+    justify-content: left;
+    font-size: 20pt;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: black;
+}
+body.dark {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+}
+#setup-game {
+    display: flex;
+    justify-content: right;
+    font-size: 20pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+#setup-game > * {
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+button {
+    justify-self: center;
+    font-size: 25pt;
+    background-color: inherit;
+    border: 3px solid #5C258D;
+    border-radius: 0px;
+    text-align: center;
+    margin: 0px;
+    vertical-align: middle;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    
+    align-content: right;
+}
+button:hover {
+    border-left-width: 10px;
+    border-radius: 0px;
+    cursor: pointer;
+    /* font-size: 30pt; */
+    color: white;
+}
+p#timer, p#lives {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+#game {
+    display: flex;
+    justify-content: center;
+}
+#number-container > p {
+    border: 2px solid blue;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    font-size: 40pt;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+#number-container > p:hover {
+    cursor: pointer;
+    border: 3px solid lightseagreen;
+}
+#board {
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 600px;
+    height: 600px;
+    background-color: inherit;
+}
+.tile {
+    border: 1px solid blue;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 40pt;
+}
+.tile:hover {
+    cursor: pointer;
+    border: 3px solid lightseagreen;
+}
+p.selected {
+    background-color: blueviolet;
+}
+p.incorrect {
+    color: red;
+}
+.rightBorder {
+    border-right: 4px solid black;
+}
+.bottomBorder {
+    border-bottom: 4px solid black;
+}
+footer {
+    background: #2c3e50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    text-align: center;
+    font-size: 25px;
+}
+input[type=radio] {
+    border: 0px;
+    width: 80%;
+    height: 2em;
+}
+.pic {
+    margin-left:2%;
+    float:left; 
+    height:80px;
+    width:80px;
+}
